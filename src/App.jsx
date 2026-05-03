@@ -20,17 +20,11 @@ export const App = () => {
     <div className="section">
       <h1 className="title">Selected tab is {activeTab.title}</h1>
 
-      <div data-cy="TabsComponent">
-        <Tabs
-          tabs={tabs}
-          activeTabId={activeTabId}
-          onTabSelected={setActiveTabId}
-        />
-
-        <div className="block" data-cy="TabContent">
-          {activeTab.content}
-        </div>
-      </div>
+      <Tabs
+        tabs={tabs}
+        activeTabId={activeTabId}
+        onTabSelected={setActiveTabId}
+      />
     </div>
   );
 };
