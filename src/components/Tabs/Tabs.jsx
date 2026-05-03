@@ -2,8 +2,6 @@ export const Tabs = ({ tabs, activeTabId, onTabSelected }) => {
   const handleTabClick = tabId => {
     if (tabId !== activeTabId) {
       onTabSelected(tabId);
-    } else {
-      onTabSelected(tabs[0].id);
     }
   };
 
